@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WMPNetWorking_Example' do
+  pod 'WMPNetWorking', :path => '../'
+
+  target 'WMPNetWorking_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
