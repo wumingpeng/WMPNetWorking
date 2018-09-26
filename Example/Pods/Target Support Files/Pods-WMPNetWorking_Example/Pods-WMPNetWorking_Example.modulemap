@@ -1,0 +1,6 @@
+framework module Pods_WMPNetWorking_Example {
+  umbrella header "Pods-WMPNetWorking_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

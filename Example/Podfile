@@ -1,11 +1,8 @@
+platform :ios, '8.0'
 use_frameworks!
-
 target 'WMPNetWorking_Example' do
-  pod 'WMPNetWorking', :path => '../'
-
-  target 'WMPNetWorking_Tests' do
-    inherit! :search_paths
-
-    
-  end
+    pod 'AFNetworking'
+    pod 'YYCategories', '~> 1.0.4'
+    pod 'MBProgressHUD', '~> 1.0.0'
 end
+

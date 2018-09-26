@@ -23,7 +23,11 @@
 		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		E19C4EB79460190EE4D4A796 /* Pods_WMPNetWorking_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EE66FA3569F647DA91835A2 /* Pods_WMPNetWorking_Tests.framework */; };
+		DA324F4A215B59EF00491089 /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = DA324F47215B59EF00491089 /* .gitkeep */; };
+		DA324F4B215B59EF00491089 /* HTTPClient.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F49215B59EF00491089 /* HTTPClient.m */; };
+		DA324F50215B5C1800491089 /* BHUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F4D215B5C1700491089 /* BHUtils.m */; };
+		DA324F51215B5C1800491089 /* GlobalFunction.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F4E215B5C1700491089 /* GlobalFunction.m */; };
+		DA324F54215B5D6100491089 /* BHProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = DA324F53215B5D6000491089 /* BHProgressHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,9 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		211F33D05CDD653CD6A2C28C /* Pods-WMPNetWorking_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPNetWorking_Tests.release.xcconfig"; path = "Target Support Files/Pods-WMPNetWorking_Tests/Pods-WMPNetWorking_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		3EE66FA3569F647DA91835A2 /* Pods_WMPNetWorking_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMPNetWorking_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		415AE631C910131F5CFDACDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		415AE631C910131F5CFDACDF /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WMPNetWorking_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WMPNetWorking_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -60,12 +63,20 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		67EDEE287E8E6E71CE73C465 /* Pods-WMPNetWorking_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPNetWorking_Example.debug.xcconfig"; path = "Target Support Files/Pods-WMPNetWorking_Example/Pods-WMPNetWorking_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		6E16C481092E729EA35DA292 /* WMPNetWorking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WMPNetWorking.podspec; path = ../WMPNetWorking.podspec; sourceTree = "<group>"; };
+		6E16C481092E729EA35DA292 /* WMPNetWorking.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WMPNetWorking.podspec; path = ../WMPNetWorking.podspec; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4BFCD4B57CF80DF791D34A9 /* Pods-WMPNetWorking_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPNetWorking_Example.release.xcconfig"; path = "Target Support Files/Pods-WMPNetWorking_Example/Pods-WMPNetWorking_Example.release.xcconfig"; sourceTree = "<group>"; };
-		AA981A77BFE3112C4AC533C7 /* Pods-WMPNetWorking_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WMPNetWorking_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WMPNetWorking_Tests/Pods-WMPNetWorking_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		C3E4099F2A71EF2922524204 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		C3E4099F2A71EF2922524204 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		DA324F47215B59EF00491089 /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		DA324F48215B59EF00491089 /* HTTPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPClient.h; sourceTree = "<group>"; };
+		DA324F49215B59EF00491089 /* HTTPClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPClient.m; sourceTree = "<group>"; };
+		DA324F4C215B5C1700491089 /* GlobalFunction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalFunction.h; sourceTree = "<group>"; };
+		DA324F4D215B5C1700491089 /* BHUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHUtils.m; sourceTree = "<group>"; };
+		DA324F4E215B5C1700491089 /* GlobalFunction.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalFunction.m; sourceTree = "<group>"; };
+		DA324F4F215B5C1800491089 /* BHUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHUtils.h; sourceTree = "<group>"; };
+		DA324F52215B5D6000491089 /* BHProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BHProgressHUD.h; sourceTree = "<group>"; };
+		DA324F53215B5D6000491089 /* BHProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BHProgressHUD.m; sourceTree = "<group>"; };
 		E90061A628BF61BADAE51117 /* Pods_WMPNetWorking_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WMPNetWorking_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -88,7 +99,6 @@
 				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				E19C4EB79460190EE4D4A796 /* Pods_WMPNetWorking_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,10 +110,7 @@
 			children = (
 				67EDEE287E8E6E71CE73C465 /* Pods-WMPNetWorking_Example.debug.xcconfig */,
 				A4BFCD4B57CF80DF791D34A9 /* Pods-WMPNetWorking_Example.release.xcconfig */,
-				AA981A77BFE3112C4AC533C7 /* Pods-WMPNetWorking_Tests.debug.xcconfig */,
-				211F33D05CDD653CD6A2C28C /* Pods-WMPNetWorking_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -144,6 +151,7 @@
 		6003F593195388D20070C39A /* Example for WMPNetWorking */ = {
 			isa = PBXGroup;
 			children = (
+				DA324F46215B59EF00491089 /* Classes */,
 				6003F59C195388D20070C39A /* WMPAppDelegate.h */,
 				6003F59D195388D20070C39A /* WMPAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -197,6 +205,23 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		DA324F46215B59EF00491089 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DA324F47215B59EF00491089 /* .gitkeep */,
+				DA324F48215B59EF00491089 /* HTTPClient.h */,
+				DA324F49215B59EF00491089 /* HTTPClient.m */,
+				DA324F4F215B5C1800491089 /* BHUtils.h */,
+				DA324F4D215B5C1700491089 /* BHUtils.m */,
+				DA324F4C215B5C1700491089 /* GlobalFunction.h */,
+				DA324F4E215B5C1700491089 /* GlobalFunction.m */,
+				DA324F52215B5D6000491089 /* BHProgressHUD.h */,
+				DA324F53215B5D6000491089 /* BHProgressHUD.m */,
+			);
+			name = Classes;
+			path = ../../WMPNetWorking/Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -223,7 +248,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "WMPNetWorking_Tests" */;
 			buildPhases = (
-				4DA9EA68F01C5342A2855CB0 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
@@ -279,6 +303,7 @@
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				DA324F4A215B59EF00491089 /* .gitkeep in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -295,44 +320,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		4DA9EA68F01C5342A2855CB0 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WMPNetWorking_Tests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
 		763B8D650E9949E66101DDD2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-WMPNetWorking_Example/Pods-WMPNetWorking_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/WMPNetWorking/WMPNetWorking.framework",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCategories/YYCategories.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WMPNetWorking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCategories.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -344,15 +347,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WMPNetWorking_Example-checkManifestLockResult.txt",
 			);
@@ -368,8 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA324F50215B5C1800491089 /* BHUtils.m in Sources */,
+				DA324F54215B5D6100491089 /* BHProgressHUD.m in Sources */,
 				6003F59E195388D20070C39A /* WMPAppDelegate.m in Sources */,
+				DA324F51215B5C1800491089 /* GlobalFunction.m in Sources */,
 				6003F5A7195388D20070C39A /* WMPViewController.m in Sources */,
+				DA324F4B215B59EF00491089 /* HTTPClient.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,7 +528,6 @@
 		};
 		6003F5C3195388D20070C39A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AA981A77BFE3112C4AC533C7 /* Pods-WMPNetWorking_Tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -549,7 +551,6 @@
 		};
 		6003F5C4195388D20070C39A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 211F33D05CDD653CD6A2C28C /* Pods-WMPNetWorking_Tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				FRAMEWORK_SEARCH_PATHS = (
